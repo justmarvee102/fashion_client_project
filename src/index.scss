@@ -9,14 +9,21 @@
 
 :root {
   --font-base: 'DM Sans', sans-serif;
-
   --primary-color: #edf2f8;
-  --secondary-color: #6431ac;
+  --secondary-color: #8e1bb5;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
+}
+
+.dark {
+  --bg-color: #333;
+  --gray-color: #bab8b8;
+  --text-color: #fff;
+  --secondary-color: #23abff;
+  /* Define other dark theme variables */
 }
 
 * {

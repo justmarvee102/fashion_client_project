@@ -1,4 +1,5 @@
 import logo from '../assets/logo.png';
+import logo1 from '../assets/logo1.png';
 import logo_1 from '../assets/logo_1.png';
 import logo_2 from '../assets/logo_2.png';
 import logo_3 from '../assets/logo_3.png';
@@ -15,6 +16,7 @@ import instagram from '../assets/instagram.png';
 export default {
   logo,
   canva,
+  logo1,
   photoshop,
   instagram,
   flyer_1,

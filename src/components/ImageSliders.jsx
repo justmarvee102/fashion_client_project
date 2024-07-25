@@ -38,9 +38,8 @@ function ImageSliders({
     },
     {
       title: 'Project Duration',
-      description: ['May 2023-January 2024'],
+      description: ['May 2023-June 2023'],
     },
-
     {
       title: 'Role and Responsibility',
       description: ['Graphic Designer'],
@@ -70,7 +69,7 @@ function ImageSliders({
     {
       title: 'Client Information',
       description: [
-        'TK Fashion House is a dynamic local fashion brand celebrated for its chic and contemporary clothing line. Known for its trendy and fashionable designs, the brand caters to a style-savvy clientele who appreciate high-quality, stylish apparel.',
+        'TK Fashion House is a dynamic local fashion brand. The brand caters to a style-savvy clientele who appreciate high-quality, stylish apparel.',
       ],
     },
   ];
@@ -80,14 +79,14 @@ function ImageSliders({
       title: 'Deliverables',
       title2: 'Social Media Graphics',
       description: [
-        'I designed a set of new logos that captures the essence of the brand. The logos incorporate elegant elements and a color palette that evokes the sophistication and creativity of the catering service.',
+        'I designed a set of try out logos before getting to the main logo that captured the essence of the brand. The main logo later chosen by client incorporates elegant elements and a color palette that evokes the sophistication and creativity of the fashion brand.',
       ],
     },
     {
       title: 'Deliverables',
       title2: 'Print Materials',
       description: [
-        'I created a flyer as needed by the client to support the brand in store marketing, in-store promotions and fashion shows',
+        'I created a flyer that can also be used as a banner as needed by the client to support the brand in store marketing and in-store promotions .',
       ],
     },
     {
@@ -101,7 +100,7 @@ function ImageSliders({
   return (
     <>
       <div className="flex flex-col items-center justify-center p-10 sm:p-14 lg:p-14 min-h-screen">
-        <div className="flex flex-col lg:flex-row items-center justify-center max-w-5xl w-full box overflow-hidden shadow-lg bg-white mt-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center max-w-5xl w-full box overflow-hidden shadow-lg bg-white dark:bg-gray-800 mt-10">
           <div className="relative w-full lg:w-3/6 overflow-hidden ">
             <motion.div
               className=" flex transition-transform ease-out duration-500 h-full"
@@ -120,13 +119,13 @@ function ImageSliders({
             <div className="absolute inset-0 flex items-center justify-between p-4">
               <button
                 onClick={prev}
-                className="p-2 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+                className="p-2 rounded-full shadow bg-white/80  dark:bg-gray-700 text-gray-800 dark:text-white hover:bg-white hover:dark:bg-gray-500 "
               >
                 <ChevronLeft size={22} />
               </button>
               <button
                 onClick={next}
-                className="p-2 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white"
+                className="p-2 rounded-full shadow bg-white/80  dark:bg-gray-700 text-gray-800 dark:text-white hover:bg-white hover:dark:bg-gray-500"
               >
                 <ChevronRight size={22} />
               </button>
@@ -145,7 +144,7 @@ function ImageSliders({
             </div>
           </div>
           <div className="lg:w-3/6 p-6 sm:w-2/2">
-            <div className="bold-text mb-3">
+            <div className="bold-text mb-3 dark:text-gray-200">
               Graphic Design for TK Fashion House
             </div>
             <p className="s-text mb-4">
@@ -154,14 +153,18 @@ function ImageSliders({
               graphic materials that would not only enhance their brand identity
               but also bring a touch of fun and flair to their visual presence.
               The project included designing lively marketing collateral,
-              eye-catching social media graphics, and engaging promotional
-              materials to reflect the brand's sophisticated and stylish image.
+              eye-catching social media graphics, engaging promotional materials
+              to reflect the brand's sophisticated and stylish image.
             </p>
             <div className="flex flex-col mb-3">
-              <span className="font-semibold">Organization Name:</span>
+              <span className="font-semibold dark:text-gray-200">
+                Organization Name:
+              </span>
               <span className="s-text">TK Fashion House</span>
             </div>
-            <div className="font-semibold mb-1">Tools Used:</div>
+            <div className="font-semibold mb-1 dark:text-gray-200">
+              Tools Used:
+            </div>
             <div className="flex flex-row gap-4 mb-4">
               <div className="flex flex-col items-center">
                 <img src={images.canva} alt="Canva" className="w-7 h-7 mt-1" />
@@ -177,7 +180,9 @@ function ImageSliders({
               </div>
             </div>
             <div className="flex-col flex mb-4">
-              <div className="font-semibold">Color Palette:</div>
+              <div className="font-semibold dark:text-gray-200">
+                Color Palette:
+              </div>
               <h2 className="s-text mb-2">
                 Modern and elegant color palette featuring a mix of bold and
                 neutral tones.
@@ -219,7 +224,7 @@ function ImageSliders({
                 <img
                   src={images.logo_2}
                   alt="canva"
-                  className="w-8 b1 h-8 mt-1 ml-1 "
+                  className="w-8 b1 h-8 mt-1 ml-1 rounded-full "
                 />
 
                 <div className="colors3">
@@ -234,7 +239,9 @@ function ImageSliders({
             </div>
 
             <div className="flex flex-col mb-4">
-              <div className="font-semibold mb-2">Project Link:</div>
+              <div className="font-semibold mb-2 dark:text-gray-200">
+                Project Link:
+              </div>
               <a href="blank" className="text-blue-500 underline">
                 *Check out a full PDF of the designs*
               </a>
@@ -242,13 +249,15 @@ function ImageSliders({
           </div>
         </div>
       </div>
+      <h1 className="font-semibold text-center dark:text-gray-200 ">
+        Other Important Info:
+      </h1>
 
-      <h1 className="font-semibold text-center ">Other Important Info:</h1>
       <div className="flex flex-wrap justify-center gap-5 w-full p-6 sm:p-10 lg:p-6">
         {items.map((item, index) => (
           <motion.div
             key={index}
-            className="flex flex-col overflow-hidden shadow-lg bg-white w-full sm:w-5/12 lg:w-1/4 items-center p-6 hover-text"
+            className="flex flex-col overflow-hidden shadow-lg bg-gray-300 dark:bg-gray-800 w-full sm:w-5/12 lg:w-1/4 items-center p-6 hover-text"
             variants={containerVariants}
             whileDrag={{ scale: 1.05 }}
             whileHover={{
@@ -256,22 +265,25 @@ function ImageSliders({
               boxShadow: '0 10px 20px rgba(0, 0, 0, 0.15)',
               rotate: 10,
               scale: 1.05,
-              backgroundColor: 'lightsalmon',
             }}
             whileTap={{
               scaleX: -1,
               rotate: 10,
               y: -10,
               boxShadow: '0 10px 20px rgba(0, 0, 0, 0.15)',
-              backgroundColor: 'salmon',
             }}
             animate="visible"
             style={{ cursor: 'pointer' }}
             initial="hidden"
           >
-            <div className="font-semibold mb-2 text-center">{item.title}</div>
+            <div className="font-semibold mb-2 text-center text-black dark:text-white">
+              {item.title}
+            </div>
             {item.description.map((desc, i) => (
-              <h2 key={i} className="h-text text-center">
+              <h2
+                key={i}
+                className="h-text text-center text-black dark:text-white"
+              >
                 {desc}
               </h2>
             ))}
@@ -279,11 +291,11 @@ function ImageSliders({
         ))}
       </div>
 
-      <div className="flex flex-wrap justify-center gap-7 w-full px-6 sm:px-10 lg:px-14 py-4 sm:py-8 lg:py-10">
+      <div className="flex flex-wrap justify-center gap-5 w-full p-6 sm:p-10 lg:p-6">
         {items2.map((item2, index) => (
           <motion.div
             key={index}
-            className="flex flex-col overflow-hidden shadow-lg bg-white w-full sm:w-5/12 lg:w-1/4 items-center p-6 hover-text"
+            className="flex flex-col overflow-hidden shadow-lg bg-gray-300 dark:bg-gray-800 w-full sm:w-5/12 lg:w-1/4 items-center p-6 hover-text"
             variants={containerVariants}
             whileDrag={{ scale: 1.05 }}
             whileHover={{
@@ -291,22 +303,25 @@ function ImageSliders({
               boxShadow: '0 10px 20px rgba(0, 0, 0, 0.15)',
               rotate: 10,
               scale: 1.05,
-              backgroundColor: 'linen',
             }}
             whileTap={{
               scaleX: -1,
               rotate: 10,
               y: -10,
               boxShadow: '0 10px 20px rgba(0, 0, 0, 0.15)',
-              backgroundColor: 'lemonchiffon',
             }}
             animate="visible"
             style={{ cursor: 'pointer' }}
             initial="hidden"
           >
-            <div className="font-semibold mb-2 text-center">{item2.title}</div>
+            <div className="font-semibold mb-2 text-center text-black dark:text-white">
+              {item2.title}
+            </div>
             {item2.description.map((desc, i) => (
-              <h2 key={i} className="h-text text-center">
+              <h2
+                key={i}
+                className="h-text text-center text-black dark:text-white"
+              >
                 {desc}
               </h2>
             ))}
@@ -314,11 +329,11 @@ function ImageSliders({
         ))}
       </div>
 
-      <div className="flex flex-wrap justify-center gap-7 w-full px-6 sm:px-10 lg:px-14 py-4 sm:py-8 lg:py-10">
+      <div className="flex flex-wrap justify-center gap-5 w-full p-6 sm:p-10 lg:p-6">
         {items3.map((item3, index) => (
           <motion.div
             key={index}
-            className="flex flex-col overflow-hidden shadow-lg bg-white w-full sm:w-5/12 lg:w-1/4 items-center p-6 hover-text"
+            className="flex flex-col overflow-hidden shadow-lg bg-gray-300 dark:bg-gray-800 w-full sm:w-5/12 lg:w-1/4 items-center p-6 hover-text"
             variants={containerVariants}
             whileDrag={{ scale: 1.05 }}
             whileHover={{
@@ -326,22 +341,25 @@ function ImageSliders({
               boxShadow: '0 10px 20px rgba(0, 0, 0, 0.15)',
               rotate: 10,
               scale: 1.05,
-              backgroundColor: 'lightpink',
             }}
             whileTap={{
               scaleX: -1,
               rotate: 10,
               y: -10,
               boxShadow: '0 10px 20px rgba(0, 0, 0, 0.15)',
-              backgroundColor: 'rosybrown',
             }}
             animate="visible"
             style={{ cursor: 'pointer' }}
             initial="hidden"
           >
-            <div className="font-semibold mb-2 text-center">{item3.title}</div>
+            <div className="font-semibold mb-2 text-center text-black dark:text-white">
+              {item3.title}
+            </div>
             {item3.description.map((desc, i) => (
-              <h2 key={i} className="h-text text-center">
+              <h2
+                key={i}
+                className="h-text text-center text-black dark:text-white"
+              >
                 {desc}
               </h2>
             ))}
