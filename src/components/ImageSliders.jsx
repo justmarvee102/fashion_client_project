@@ -100,7 +100,7 @@ function ImageSliders({
   return (
     <>
       <div className="flex flex-col items-center justify-center p-10 sm:p-14 lg:p-14 min-h-screen">
-        <div className="flex flex-col lg:flex-row items-center justify-center max-w-5xl w-full box overflow-hidden shadow-lg bg-white dark:bg-gray-800 mt-10">
+        <div className="flex flex-col lg:flex-row items-center justify-center max-w-5xl w-full box overflow-hidden shadow-xl bg-white dark:bg-gray-800 mt-10">
           <div className="relative w-full lg:w-3/6 overflow-hidden ">
             <motion.div
               className=" flex transition-transform ease-out duration-500 h-full"
@@ -194,12 +194,12 @@ function ImageSliders({
                   className="w-8 b1 h-8 mt-1 ml-1 rounded-full"
                 />
                 <div className="colors">
-                  <button className=" w-8 h-8 rounded-full shadow hover:bg-white mt-1 ml-2 b1"></button>
-                  <button className=" w-8 h-8 rounded-full shadow hover:bg-white mt-1 ml-2 b2"></button>
-                  <button className=" w-8 h-8 rounded-full shadow b3 hover:bg-white mt-1 ml-3"></button>
-                  <button className=" w-8 h-8 rounded-full shadow b4 hover:bg-white mt-1 ml-2"></button>
-                  <button className=" w-8 h-8 rounded-full shadow b5 hover:bg-white mt-1 ml-2"></button>
-                  <button className=" w-8 h-8 rounded-full shadow b6 hover:bg-white mt-1 ml-2"></button>
+                  <button className=" w-8 h-8 rounded-full shadow hover:bg-white mt-1 ml-2 b1 dark:hover:bg-gray-800"></button>
+                  <button className=" w-8 h-8 rounded-full shadow hover:bg-white mt-1 ml-2 b2 dark:hover:bg-gray-800"></button>
+                  <button className=" w-8 h-8 rounded-full shadow b3 hover:bg-white mt-1 ml-3 dark:hover:bg-gray-800 "></button>
+                  <button className=" w-8 h-8 rounded-full shadow b4 hover:bg-white mt-1 ml-2 dark:hover:bg-gray-800"></button>
+                  <button className=" w-8 h-8 rounded-full shadow b5 hover:bg-white mt-1 ml-2 dark:hover:bg-gray-800"></button>
+                  <button className=" w-8 h-8 rounded-full shadow b6 hover:bg-white mt-1 ml-2 dark:hover:bg-gray-800 "></button>
                 </div>
               </div>
 
@@ -211,12 +211,12 @@ function ImageSliders({
                 />
 
                 <div className="colors2">
-                  <button className=" w-8 h-8 rounded-full shadow hover:bg-white mt-1 ml-2 b1"></button>
-                  <button className=" w-8 h-8 rounded-full shadow hover:bg-white mt-1 ml-2 b2"></button>
-                  <button className=" w-8 h-8 rounded-full shadow b3 hover:bg-white mt-1 ml-3"></button>
-                  <button className=" w-8 h-8 rounded-full shadow b4 hover:bg-white mt-1 ml-2"></button>
-                  <button className=" w-8 h-8 rounded-full shadow b5 hover:bg-white mt-1 ml-2"></button>
-                  <button className=" w-8 h-8 rounded-full shadow b6 hover:bg-white mt-1 ml-2"></button>
+                  <button className=" w-8 h-8 rounded-full shadow hover:bg-white mt-1 ml-2 b1 dark:hover:bg-gray-800"></button>
+                  <button className=" w-8 h-8 rounded-full shadow hover:bg-white mt-1 ml-2 b2 dark:hover:bg-gray-800"></button>
+                  <button className=" w-8 h-8 rounded-full shadow b3 hover:bg-white mt-1 ml-3 dark:hover:bg-gray-800"></button>
+                  <button className=" w-8 h-8 rounded-full shadow b4 hover:bg-white mt-1 ml-2 dark:hover:bg-gray-800"></button>
+                  <button className=" w-8 h-8 rounded-full shadow b5 hover:bg-white mt-1 ml-2 dark:hover:bg-gray-800"></button>
+                  <button className=" w-8 h-8 rounded-full shadow b6 hover:bg-white mt-1 ml-2 dark:hover:bg-gray-800"></button>
                 </div>
               </div>
 
@@ -228,12 +228,12 @@ function ImageSliders({
                 />
 
                 <div className="colors3">
-                  <button className=" w-8 h-8 rounded-full shadow hover:bg-white mt-1 ml-2 b1"></button>
-                  <button className=" w-8 h-8 rounded-full shadow hover:bg-white mt-1 ml-2 b2"></button>
-                  <button className=" w-8 h-8 rounded-full shadow b3 hover:bg-white mt-1 ml-3"></button>
-                  <button className=" w-8 h-8 rounded-full shadow b4 hover:bg-white mt-1 ml-2"></button>
-                  <button className=" w-8 h-8 rounded-full shadow b5 hover:bg-white mt-1 ml-2"></button>
-                  <button className=" w-8 h-8 rounded-full shadow b6 hover:bg-white mt-1 ml-2"></button>
+                  <button className=" w-8 h-8 rounded-full shadow hover:bg-white mt-1 ml-2 b1 dark:hover:bg-gray-800"></button>
+                  <button className=" w-8 h-8 rounded-full shadow hover:bg-white mt-1 ml-2 b2 dark:hover:bg-gray-800"></button>
+                  <button className=" w-8 h-8 rounded-full shadow b3 hover:bg-white mt-1 ml-3 dark:hover:bg-gray-800"></button>
+                  <button className=" w-8 h-8 rounded-full shadow b4 hover:bg-white mt-1 ml-2 dark:hover:bg-gray-800"></button>
+                  <button className=" w-8 h-8 rounded-full shadow b5 hover:bg-white mt-1 ml-2 dark:hover:bg-gray-800"></button>
+                  <button className=" w-8 h-8 rounded-full shadow b6 hover:bg-white mt-1 ml-2 dark:hover:bg-gray-800"></button>
                 </div>
               </div>
             </div>
@@ -242,7 +242,10 @@ function ImageSliders({
               <div className="font-semibold mb-2 dark:text-gray-200">
                 Project Link:
               </div>
-              <a href="blank" className="text-blue-500 underline">
+              <a
+                href="blank"
+                className="text-blue-500 underline dark:text-blue-300 dark:hover:text-gray-300"
+              >
                 *Check out a full PDF of the designs*
               </a>
             </div>
